@@ -1,0 +1,3 @@
+# DubboApiWrapperFactory
+com.jimbean.shenyu.client.dubbo.wrapper.DubboApiWrapperFactory=\
+com.jimbean.shenyu.client.dubbo.wrapper.ApacheDubboApiWrapperFactory

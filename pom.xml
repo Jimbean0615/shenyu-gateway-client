@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.4</version>
+    </parent>
+
+    <groupId>com.jimbean.shenyu.client</groupId>
+    <artifactId>shenyu-gateway-client</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>Demo project for XingChao Spring Boot</description>
+
+    <modules>
+        <module>shenyu-gateway-client-core</module>
+        <module>shenyu-gateway-client-dubbo</module>
+        <module>shenyu-gateway-client-starter</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <middleware-toolkit.version>1.0.15-SNAPSHOT</middleware-toolkit.version>
+        <guava.version>31.1-jre</guava.version>
+        <javassist.version>3.23.1-GA</javassist.version>
+        <okhttp.version>4.9.1</okhttp.version>
+        <gson.version>2.9.0</gson.version>
+        <shenyu.version>2.4.3</shenyu.version>
+        <signature.version>2.0.1-SNAPSHOT</signature.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>${javassist.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shenyu</groupId>
+                <artifactId>shenyu-common</artifactId>
+                <version>${shenyu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shenyu</groupId>
+                <artifactId>shenyu-client-core</artifactId>
+                <version>${shenyu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shenyu</groupId>
+                <artifactId>shenyu-client-dubbo-common</artifactId>
+                <version>${shenyu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gmduck</groupId>
+                <artifactId>signature-sdk</artifactId>
+                <version>${signature.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
