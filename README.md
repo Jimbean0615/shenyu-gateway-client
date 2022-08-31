@@ -74,6 +74,3 @@ public class HttpTestController {
 - `@Gateway` 配置dubbo转成http协议后的contextPath
 - `@ShenyuDubboClient` shenyu网关dubbo核心注解，判断接口uri路径
 
-
-## 五、维护者
-- zhangjb
