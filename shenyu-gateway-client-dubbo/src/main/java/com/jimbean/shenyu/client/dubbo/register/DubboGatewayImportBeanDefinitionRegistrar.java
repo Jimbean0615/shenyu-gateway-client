@@ -35,7 +35,7 @@ import java.util.Set;
 /**
  * @author zhangjb <br/>
  * @date 2022-08-08 16:22 <br/>
- * @email: <a href="mailto:zhangjb03@c5game.com">zhangjb</a> <br/>
+ * @email: <a href="mailto:zhangjb03@gmail.com">zhangjb</a> <br/>
  */
 public class DubboGatewayImportBeanDefinitionRegistrar
         implements ImportBeanDefinitionRegistrar, ResourceLoaderAware, EnvironmentAware, BeanFactoryAware, Ordered {
