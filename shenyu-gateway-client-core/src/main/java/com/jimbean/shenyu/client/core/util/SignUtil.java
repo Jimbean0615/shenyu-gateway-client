@@ -10,6 +10,11 @@ import java.util.stream.Collectors;
 import org.springframework.util.DigestUtils;
 import org.springframework.util.StringUtils;
 
+/**
+ * SignUtil
+ *
+ * @author zhangjb03
+ */
 public class SignUtil {
     public static final String TIMESTAMP = "timestamp";
     public static final String PATH = "path";

@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 /**
  * @author zhangjb <br/>
  * @date 2022-08-08 16:16 <br/>
- * @email: <a href="mailto:zhangjb@c5game.com">zhangjb</a> <br/>
+ * @email: <a href="mailto:zhangjb03@c5game.com">zhangjb</a> <br/>
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.METHOD})

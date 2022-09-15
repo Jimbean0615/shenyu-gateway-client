@@ -16,6 +16,7 @@ import java.util.Objects;
 /**
  * The type Http helper.
  *
+ * @author shenyu
  * @author zhangjb
  */
 public class HttpHelper {
