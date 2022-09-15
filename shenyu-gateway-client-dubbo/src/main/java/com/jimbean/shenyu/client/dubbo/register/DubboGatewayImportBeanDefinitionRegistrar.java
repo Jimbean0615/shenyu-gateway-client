@@ -3,7 +3,7 @@ package com.jimbean.shenyu.client.dubbo.register;
 import com.jimbean.shenyu.client.core.annotation.GateWay;
 import com.jimbean.shenyu.client.core.helper.HttpHelper;
 import com.jimbean.shenyu.client.dubbo.annotation.DubboGatewayScanner;
-import com.jimbean.shenyu.client.dubbo.wrapper.DubboApiWrapperFactory;
+import com.jimbean.shenyu.client.dubbo.wrapper.ApiWrapperFactory;
 import org.apache.shenyu.client.dubbo.common.annotation.ShenyuDubboClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -76,8 +76,8 @@ public class DubboGatewayImportBeanDefinitionRegistrar
                 String path = annotationMetadata.getAnnotationAttributes(
                         ShenyuDubboClient.class.getCanonicalName()) == null ? "" : (String) annotationMetadata.getAnnotationAttributes(ShenyuDubboClient.class.getCanonicalName()).get("path");
 
-                DubboApiWrapperFactory dubboApiWrapperFactory = SpringFactoriesLoader.loadFactories(DubboApiWrapperFactory.class, getClassLoader()).get(0);
-                classWrapper = dubboApiWrapperFactory.make(contextPath + path, Class.forName(candidateComponent.getBeanClassName()));
+                ApiWrapperFactory apiWrapperFactory = SpringFactoriesLoader.loadFactories(ApiWrapperFactory.class, getClassLoader()).get(0);
+                classWrapper = apiWrapperFactory.make(contextPath + path, Class.forName(candidateComponent.getBeanClassName()));
 
                 if (null != classWrapper) {
                     registry.registerBeanDefinition(classWrapper.getSimpleName(),

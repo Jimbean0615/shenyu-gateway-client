@@ -13,7 +13,7 @@
 ```xml
 <dependency>
     <groupId>com.jimbean.shenyu.client</groupId>
-    <artifactId>shenyu-gateway-client-starter</artifactId>
+    <artifactId>shenyu-gateway-client-dubbo-starter</artifactId>
     <version>${latest.version}</version>
 </dependency>
 ```

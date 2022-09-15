@@ -14,12 +14,12 @@
     <artifactId>shenyu-gateway-client</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <description>Demo project for XingChao Spring Boot</description>
+    <description>Demo project for Spring Boot</description>
 
     <modules>
         <module>shenyu-gateway-client-core</module>
         <module>shenyu-gateway-client-dubbo</module>
-        <module>shenyu-gateway-client-starter</module>
+        <module>shenyu-gateway-client-dubbo-starter</module>
     </modules>
 
     <properties>
